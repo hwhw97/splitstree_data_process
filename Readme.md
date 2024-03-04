@@ -7,6 +7,10 @@
 - 结果示例：
 ![Img](./sample.png)
 
+To do list：
+- [] 修改字体大小和枝条粗细
+
+
 splitstree软件链接：
 - [splitstree4](https://github.com/husonlab/splitstree4)
 - [splitstree6](https://github.com/husonlab/splitstree6)
