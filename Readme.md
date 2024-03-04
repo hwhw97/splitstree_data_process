@@ -1,5 +1,5 @@
 
-## 用于修改splitstree6的.stree6文件，实现批量添加枝条和标签颜色
+## 用于修改 splitstree6 的 .stree6 文件，实现批量添加枝条和标签颜色
 
 <br/>
 
