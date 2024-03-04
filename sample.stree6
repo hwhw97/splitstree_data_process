@@ -1,0 +1,221 @@
+#nexus [SplitsTree6]
+
+BEGIN SPLITSTREE6;
+DIMENSIONS nDataNodes=7 nAlgorithms=4;
+PROGRAM version='SplitsTree CE (version 6.2.1-beta, built 16 Nov 2023)';
+WORKFLOW creationDate='1709469336516'; [Sun Mar 03 20:35:36 CST 2024]
+END; [SPLITSTREE6]
+
+[
+Methods:
+Analysis was performed using SplitsTree CE 6.0.0_alpha (Huson and Bryant 2006).
+The original input consisted of 12 taxa and a 12 x 12 distance matrix.
+The Neighbor Net method (Bryant & Moulton 2004, Bryant & Huson 2023) was used (default options) so as to obtain 32 splits, cyclic.
+The Show Splits method was used (default options) so as to obtain a Splits Network visualization.
+
+References:
+Bryant & Huson 2023: D. Bryant and D.H. Huson, NeighborNet- improved algorithms and implementation. Front. Bioinform. 3, 2023
+Bryant & Moulton 2004: D. Bryant and V. Moulton. Neighbor-net: An agglomerative method for the construction of phylogenetic networks. Molecular Biology and Evolution, 21(2):255– 265, 2004.
+Huson and Bryant 2006: D.H. Huson and D. Bryant. Application of phylogenetic networks in evolutionary studies. Molecular Biology and Evolution, 23:254–267, 2006.
+]
+
+BEGIN TAXA;
+TITLE 'Input Taxa';
+DIMENSIONS ntax=12;
+TAXLABELS
+	[1] 'UIGHUR_XINJIANG_YILI_YINING'
+	[2] 'KAZAKH_XINJIANG_HABAHE'
+	[3] 'KAZAKH_XINJIANG_CHABUCHAER'
+	[4] 'KIRGHIZ_XINJIANG_KEZILESU'
+	[5] 'UZBEK_XINJIANG_ULUMUQI'
+	[6] 'TATAR_XINJIANG_ULUMUQI'
+	[7] 'TUVA_XINJIANG_ALETAI_BUERJIN'
+	[8] 'SALAER_QINGHAI_HAIDONG_XUNHUA'
+	[9] 'YUGU_GANSU_SUNAN_LIANHUA'
+	[10] 'AYNU'
+	[11] 'UYGHUR'
+	[12] 'WEST_YUGUR'
+;
+DISPLAYLABELS
+	[1] '<c 0x00ffffff><bg 0x00000000>UIGHUR_XINJIANG_YILI_YINING'
+	[2] '<c 0x00ffffff><bg 0x00000000>KAZAKH_XINJIANG_HABAHE'
+	[3] '<c 0x00ffffff><bg 0x00000000>KAZAKH_XINJIANG_CHABUCHAER'
+	[4] '<c 0x0000ffff><bg 0x00000000>KIRGHIZ_XINJIANG_KEZILESU'
+	[5] '<c 0x0000ffff><bg 0x00000000>UZBEK_XINJIANG_ULUMUQI'
+	[6] '<c 0x0000ffff><bg 0x00000000>TATAR_XINJIANG_ULUMUQI'
+	[7] '<c 0x0000ffff><bg 0x00000000>TUVA_XINJIANG_ALETAI_BUERJIN'
+	[8] '<c 0xff0000ff><bg 0x00000000>SALAER_QINGHAI_HAIDONG_XUNHUA'
+	[9] '<c 0xff0000ff><bg 0x00000000>YUGU_GANSU_SUNAN_LIANHUA'
+	[10] '<c 0xff0000ff><bg 0x00000000>AYNU'
+	[11] '<c 0x00ff00ff><bg 0x00000000>UYGHUR'
+	[12] '<c 0x00ff00ff><bg 0x00000000>WEST_YUGUR'
+;
+[TAXINFO;]
+END; [TAXA]
+
+BEGIN ALGORITHM;
+TITLE 'Taxa Filter';
+NAME 'Taxa Filter';
+OPTIONS
+;
+END; [ALGORITHM]
+
+BEGIN TAXA;
+TITLE 'Working Taxa';
+LINK ALGORITHM = 'Taxa Filter';
+DIMENSIONS ntax=12;
+TAXLABELS
+	[1] 'UIGHUR_XINJIANG_YILI_YINING'
+	[2] 'KAZAKH_XINJIANG_HABAHE'
+	[3] 'KAZAKH_XINJIANG_CHABUCHAER'
+	[4] 'KIRGHIZ_XINJIANG_KEZILESU'
+	[5] 'UZBEK_XINJIANG_ULUMUQI'
+	[6] 'TATAR_XINJIANG_ULUMUQI'
+	[7] 'TUVA_XINJIANG_ALETAI_BUERJIN'
+	[8] 'SALAER_QINGHAI_HAIDONG_XUNHUA'
+	[9] 'YUGU_GANSU_SUNAN_LIANHUA'
+	[10] 'AYNU'
+	[11] 'UYGHUR'
+	[12] 'WEST_YUGUR'
+;
+DISPLAYLABELS
+	[1] 'UIGHUR_XINJIANG_YILI_YINING'
+	[2] 'KAZAKH_XINJIANG_HABAHE'
+	[3] 'KAZAKH_XINJIANG_CHABUCHAER'
+	[4] 'KIRGHIZ_XINJIANG_KEZILESU'
+	[5] 'UZBEK_XINJIANG_ULUMUQI'
+	[6] 'TATAR_XINJIANG_ULUMUQI'
+	[7] 'TUVA_XINJIANG_ALETAI_BUERJIN'
+	[8] 'SALAER_QINGHAI_HAIDONG_XUNHUA'
+	[9] 'YUGU_GANSU_SUNAN_LIANHUA'
+	[10] 'AYNU'
+	[11] 'UYGHUR'
+	[12] 'WEST_YUGUR'
+;
+[TAXINFO;]
+END; [TAXA]
+
+BEGIN DISTANCES;
+TITLE 'Input Distances';
+LINK ALGORITHM = 'Taxa Filter';
+DIMENSIONS ntax=12;
+FORMAT labels=left diagonal triangle=Lower;
+MATRIX
+[1] 'UIGHUR_XINJIANG_YILI_YINING'     0
+[2] 'KAZAKH_XINJIANG_HABAHE'          6.164 0
+[3] 'KAZAKH_XINJIANG_CHABUCHAER'      4.917 3.786 0
+[4] 'KIRGHIZ_XINJIANG_KEZILESU'       4.183 4.524 2.333 0
+[5] 'UZBEK_XINJIANG_ULUMUQI'          3.634 5.503 3.674 3.406 0
+[6] 'TATAR_XINJIANG_ULUMUQI'          4.263 5.116 3.242 3.281 3.502 0
+[7] 'TUVA_XINJIANG_ALETAI_BUERJIN'    6.86 6.737 5.435 5.438 5.978 6.491 0
+[8] 'SALAER_QINGHAI_HAIDONG_XUNHUA'   5.671 6.996 5.717 5.613 5.683 5.627 6.226 0
+[9] 'YUGU_GANSU_SUNAN_LIANHUA'        6.684 6.253 5.878 6.072 6.085 6.168 6.536 5.326 0
+[10] 'AYNU'                            8.898 9.438 9.165 9.309 9.33 9.179 9.276 9.497 9.567 0
+[11] 'UYGHUR'                          3.837 6.537 5.977 5.353 5.519 5.672 7.545 6.552 6.915 9.58 0
+[12] 'WEST_YUGUR'                      6.532 7.406 6.711 6.78 6.715 6.909 7.993 7.453 5.677 9.566 7.27 0
+;
+END; [DISTANCES]
+
+BEGIN ALGORITHM;
+TITLE 'Input Data Filter';
+LINK DISTANCES = 'Input Distances';
+NAME 'Distances Taxa Filter';
+END; [ALGORITHM]
+
+BEGIN DISTANCES;
+TITLE 'Working Distances';
+LINK ALGORITHM = 'Input Data Filter';
+DIMENSIONS ntax=12;
+FORMAT labels=left diagonal triangle=Lower;
+MATRIX
+[1] 'UIGHUR_XINJIANG_YILI_YINING'     0
+[2] 'KAZAKH_XINJIANG_HABAHE'          6.164 0
+[3] 'KAZAKH_XINJIANG_CHABUCHAER'      4.917 3.786 0
+[4] 'KIRGHIZ_XINJIANG_KEZILESU'       4.183 4.524 2.333 0
+[5] 'UZBEK_XINJIANG_ULUMUQI'          3.634 5.503 3.674 3.406 0
+[6] 'TATAR_XINJIANG_ULUMUQI'          4.263 5.116 3.242 3.281 3.502 0
+[7] 'TUVA_XINJIANG_ALETAI_BUERJIN'    6.86 6.737 5.435 5.438 5.978 6.491 0
+[8] 'SALAER_QINGHAI_HAIDONG_XUNHUA'   5.671 6.996 5.717 5.613 5.683 5.627 6.226 0
+[9] 'YUGU_GANSU_SUNAN_LIANHUA'        6.684 6.253 5.878 6.072 6.085 6.168 6.536 5.326 0
+[10] 'AYNU'                            8.898 9.438 9.165 9.309 9.33 9.179 9.276 9.497 9.567 0
+[11] 'UYGHUR'                          3.837 6.537 5.977 5.353 5.519 5.672 7.545 6.552 6.915 9.58 0
+[12] 'WEST_YUGUR'                      6.532 7.406 6.711 6.78 6.715 6.909 7.993 7.453 5.677 9.566 7.27 0
+;
+END; [DISTANCES]
+
+BEGIN ALGORITHM;
+TITLE 'Neighbor Net';
+LINK DISTANCES = 'Working Distances';
+NAME 'Neighbor Net';
+OPTIONS
+	InferenceAlgorithm = 'ActiveSet';
+END; [ALGORITHM]
+
+BEGIN SPLITS;
+TITLE 'Splits';
+LINK ALGORITHM = 'Neighbor Net';
+DIMENSIONS ntax=12 nsplits=32;
+FORMAT labels=no weights=yes confidences=no;
+PROPERTIES fit=99.9 cyclic;
+CYCLE 1 5 6 4 3 2 12 9 8 7 10 11;
+MATRIX
+[1, size=1] 	 1.01405344 	 1,
+[2, size=2] 	 0.76986088 	 1 11,
+[3, size=3] 	 0.16998447 	 1 10 11,
+[4, size=5] 	 0.16988877 	 1 7 8 9 10 11 12,
+[5, size=4] 	 0.1643407 	 1 2 7 8 9 10 11 12,
+[6, size=1] 	 1.37015191 	 1 2 3 4 6 7 8 9 10 11 12,
+[7, size=1] 	 2.23683057 	 1 2 3 4 5 6 7 8 9 10 12,
+[8, size=5] 	 0.25397301 	 1 3 4 5 6,
+[9, size=3] 	 0.10568184 	 1 5 6,
+[10, size=2] 	 0.25042598 	 1 5,
+[11, size=1] 	 5.87411191 	 1 2 3 4 5 6 7 8 9 11 12,
+[12, size=2] 	 0.27483692 	 1 2 3 4 5 6 8 9 11 12,
+[13, size=5] 	 0.1345841 	 1 2 3 4 5 6 11,
+[14, size=5] 	 0.21406404 	 1 4 5 6 11,
+[15, size=3] 	 0.03583032 	 1 5 11,
+[16, size=1] 	 3.02197665 	 1 2 3 4 5 6 8 9 10 11 12,
+[17, size=2] 	 0.02813038 	 1 2 3 4 5 6 9 10 11 12,
+[18, size=3] 	 0.16969986 	 1 2 3 4 5 6 10 11 12,
+[19, size=1] 	 2.50250332 	 1 2 3 4 5 6 7 9 10 11 12,
+[20, size=2] 	 0.40667705 	 1 2 3 4 5 6 7 10 11 12,
+[21, size=1] 	 1.94496825 	 1 2 3 4 5 6 7 8 10 11 12,
+[22, size=2] 	 0.73234611 	 1 2 3 4 5 6 7 8 10 11,
+[23, size=3] 	 0.12562682 	 1 3 4 5 6 7 8 10 11,
+[24, size=1] 	 3.15754692 	 1 2 3 4 5 6 7 8 9 10 11,
+[25, size=1] 	 2.19893964 	 1 3 4 5 6 7 8 9 10 11 12,
+[26, size=2] 	 0.34752397 	 1 4 5 6 7 8 9 10 11 12,
+[27, size=3] 	 0.19409975 	 1 5 6 7 8 9 10 11 12,
+[28, size=4] 	 0.22481508 	 1 5 7 8 9 10 11 12,
+[29, size=1] 	 0.80291046 	 1 2 4 5 6 7 8 9 10 11 12,
+[30, size=2] 	 0.23789141 	 1 2 5 6 7 8 9 10 11 12,
+[31, size=1] 	 0.98172901 	 1 2 3 5 6 7 8 9 10 11 12,
+[32, size=1] 	 1.54206049 	 1 2 3 4 5 7 8 9 10 11 12,
+;
+END; [SPLITS]
+
+BEGIN ALGORITHM;
+TITLE 'Show Splits';
+LINK SPLITS = 'Splits';
+NAME 'Show Splits';
+OPTIONS
+	View = 'SplitsNetwork';
+END; [ALGORITHM]
+
+BEGIN VIEW;
+TITLE 'SplitsNetwork';
+LINK ALGORITHM = 'Show Splits';
+NAME 'SplitsNetwork';
+INPUT 'SPLITS';
+OPTIONS
+	Diagram = 'Splits',
+	Orientation = 'Rotate0Deg',
+	Rooting = 'None',
+	ZoomFactor = 12.55283196,
+	FontScaleFactor = 1,
+	RootAngle = 160,
+	OutlineFill = 0xc0c0c0ff,
+	Edits = 'c:1:0x00ffffff' 'c:25:0x00ffffff' 'c:29:0x00ffffff' 'c:31:0x0000ffff' 'c:6:0x0000ffff' 'c:32:0x0000ffff' 'c:16:0x0000ffff' 'c:19:0xff0000ff' 'c:21:0xff0000ff' 'c:11:0xff0000ff' 'c:7:0x00ff00ff' 'c:24:0x00ff00ff',
+	ShowConfidence = 'false',
+	ActiveTraits = '*All*';
+END; [VIEW]
