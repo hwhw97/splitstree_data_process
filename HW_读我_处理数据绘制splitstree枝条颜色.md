@@ -69,18 +69,18 @@
 
 | docu | label_c | label_background_c | edge_c |
 | -- | -- | -- | -- |
-| UIGHUR_XINJIANG_YILI_YINING | 1 | 1 | 1 |
-| KAZAKH_XINJIANG_HABAHE | 1 | 1 | 1 |
-| KAZAKH_XINJIANG_CHABUCHAER | 1 | 1 | 1 |
-| KIRGHIZ_XINJIANG_KEZILESU | 2 | 2 | 2 |
-| UZBEK_XINJIANG_ULUMUQI | 2 | 2 | 2 |
-| TATAR_XINJIANG_ULUMUQI | 2 | 2 | 2 |
-| TUVA_XINJIANG_ALETAI_BUERJIN | 2 | 2 | 2 |
-| SALAER_QINGHAI_HAIDONG_XUNHUA | 3 | 3 | 3 |
-| YUGU_GANSU_SUNAN_LIANHUA | 3 | 3 | 3 |
-| AYNU | 3 | 3 | 3 |
-| UYGHUR | 4 | 4 | 4 |
-| WEST_YUGUR | 4 | 4 | 4 |
+| UIGHUR_XINJIANG_YILI_YINING | 1 | 0 | 1 |
+| KAZAKH_XINJIANG_HABAHE | 1 | 0 | 1 |
+| KAZAKH_XINJIANG_CHABUCHAER | 1 | 0 | 1 |
+| KIRGHIZ_XINJIANG_KEZILESU | 2 | 0 | 2 |
+| UZBEK_XINJIANG_ULUMUQI | 2 | 0 | 2 |
+| TATAR_XINJIANG_ULUMUQI | 2 | 0 | 2 |
+| TUVA_XINJIANG_ALETAI_BUERJIN | 2 | 0 | 2 |
+| SALAER_QINGHAI_HAIDONG_XUNHUA | 3 | 0 | 3 |
+| YUGU_GANSU_SUNAN_LIANHUA | 3 | 0 | 3 |
+| AYNU | 3 | 0 | 3 |
+| UYGHUR | 4 | 0 | 4 |
+| WEST_YUGUR | 4 | 0 | 4 |
 
 注意：如果不想要标签的背景颜色，则 `label_background_c` 列均设置为0。一般`label_c` 和 `edge_c` 可以设置为一样，这样标签和枝条的颜色是一样的。
 
