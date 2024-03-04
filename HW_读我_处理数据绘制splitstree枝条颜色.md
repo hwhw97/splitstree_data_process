@@ -6,7 +6,7 @@
 ## 步骤一
 1. 用 `splistree6` 打开 `.nex` 文件，另存为 `.tree6` 文件， 使用 `VScode` 等编辑器打开 `.tree6` 文件    
     + *在进行后续操作之前，注意备份好 `.nex` 和 `.tree6` 文件*
-2. 搜索 `Input Taxa`，将其下的`TAXLABELS`复制保存为 **TAXLABELS.txt** 注意不要与 `Working Taxa` 中的内`TAXLABELS`相混。
+2. 搜索 `Input Taxa`，将其下的`TAXLABELS`复制保存为 **TAXLABELS.txt** ，注意不要与 `Working Taxa` 中的内`TAXLABELS`相混。
 内容如：
 ```md
 [1] 'UIGHUR_XINJIANG_YILI_YINING'
