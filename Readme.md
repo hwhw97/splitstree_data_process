@@ -4,6 +4,8 @@
 
 - 详细介绍请看：[说明](./HW_读我_处理数据绘制splitstree枝条颜色.md)
 
+splitstree软件链接：
+
 - [splitstree4](https://github.com/husonlab/splitstree4)
 - [splitstree6](https://github.com/husonlab/splitstree6)
 
