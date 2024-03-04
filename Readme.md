@@ -8,7 +8,7 @@
 ![Img](./sample.png)
 
 To do list：
-- [] 修改字体大小和枝条粗细
+- [ ] 修改字体大小和枝条粗细
 
 
 splitstree软件链接：
