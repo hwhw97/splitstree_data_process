@@ -4,9 +4,9 @@
 20240303 黄玮
 
 ## 步骤一
-1. 用 `splistree6` 打开 [`.nex` 文件](/sample.nex)，另存为 `.stree6` 文件， 使用 `VScode` 等编辑器打开 `.stree6` 文件    
+1. 用 `splistree6` 打开 `.nex` [文件🔗](/sample.nex)，另存为 `.stree6` 文件， 使用 `VScode` 等编辑器打开 `.stree6` 文件    
     + *在进行后续操作之前，注意备份好 `.nex` 和 `.stree6` 文件*
-2. 搜索 `Input Taxa`，将其下的`TAXLABELS`复制保存为 [**TAXLABELS.txt** 文件](/TAXLABELS.txt)，注意不要与 `Working Taxa` 中的内`TAXLABELS`相混。
+2. 搜索 `Input Taxa`，将其下的`TAXLABELS`复制保存为 **TAXLABELS.txt** [文件🔗](/TAXLABELS.txt)，注意不要与 `Working Taxa` 中的内`TAXLABELS`相混。
 内容如：
 ```md
 [1] 'UIGHUR_XINJIANG_YILI_YINING'
@@ -26,7 +26,7 @@
 ## 顶格
 ```
 
-3. 搜索`BEGIN SPLITS;`，将其下的`MATRIX`下的内容复制保存为 [**MATRIX.txt** 文件](/MATRIX.txt)，内容如：
+3. 搜索`BEGIN SPLITS;`，将其下的`MATRIX`下的内容复制保存为 **MATRIX.txt** [文件🔗](/MATRIX.txt)，内容如：
 
 ```md
  [1, size=1]    1.01405344    1, 
@@ -72,7 +72,7 @@
 ## 顶格
 ```
 
-4. 制作一个语档分组，即想把语档的标签文字、标签背景、线条分别设置成什么颜色，同一个方言或符合相同预设条件的分为同一个组，存为 **docu_color.txt** （使用 `tab` 分隔），如：
+4. 制作一个语档分组，即想把语档的标签文字、标签背景、线条分别设置成什么颜色，同一个方言或符合相同预设条件的分为同一个组，存为 **docu_color.txt** [文件🔗](/docu_color.txt)（使用 `tab` 分隔），如：
 
 | docu | label_c | label_background_c | edge_c |
 | -- | -- | -- | -- |
@@ -97,13 +97,13 @@
 
 ## 步骤二
 1. 在 `jupyter lab` 中依次运行 `HW_准备绘制枝条颜色数据.ipynb` 的单元格
-2. 得到输出文件 [**df_color.txt** 文件](/df_color.txt) 和 [**df_edgcolor.txt** 文件](df_edgcolor.txt)
+2. 得到输出文件 **df_color.txt** [文件🔗](/df_color.txt) 和 **df_edgcolor.txt** [文件🔗](df_edgcolor.txt)
 3. 将 **df_color.txt** 中的内容复制，替换掉 `.stree6` 中 `Input Taxa` 下的 `DISPLAYLABELS` （注意不是 `TAXLABELS`）
 4. 将 **df_edgcolor.txt** 中的内容复制，替换掉 `.stree6` 中 `TITLE 'SplitsNetwork';` 下的 `Edits = `后的内容，注意最后有一个英文的逗号不要误删了
 
 ## 步骤三
 1. 保存 `.stree6` 文件，做好备份
-2. 打开 `splitstree6` 读取 [`.stree6` 文件](/sample.stree6)
+2. 打开 `splitstree6` 读取 `.stree6` [文件🔗](/sample.stree6)
 
 <br/>
 <br/>
