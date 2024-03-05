@@ -96,7 +96,7 @@
 
 
 ## 步骤二
-1. 在 `jupyter lab` 中依次运行 `HW_准备绘制枝条颜色数据.ipynb` 的单元格
+1. 在 `jupyter lab` 中依次运行 `HW_准备绘制枝条颜色数据.ipynb` [文件🔗](/HW_准备绘制枝条颜色数据.ipynb) 的单元格
 2. 得到输出文件 **df_color.txt** [文件🔗](/df_color.txt) 和 **df_edgcolor.txt** [文件🔗](df_edgcolor.txt)
 3. 将 **df_color.txt** 中的内容复制，替换掉 `.stree6` 中 `Input Taxa` 下的 `DISPLAYLABELS` （注意不是 `TAXLABELS`）
 4. 将 **df_edgcolor.txt** 中的内容复制，替换掉 `.stree6` 中 `TITLE 'SplitsNetwork';` 下的 `Edits = `后的内容，注意最后有一个英文的逗号不要误删了
