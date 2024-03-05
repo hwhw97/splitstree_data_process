@@ -20,8 +20,18 @@
 
 
 splitstree 软件链接：
+<!-- 
 - [splitstree4](https://github.com/husonlab/splitstree4)
 - [splitstree6](https://github.com/husonlab/splitstree6)
+ -->
+
+- <a href="https://github.com/husonlab/splitstree4"target="_blank">splitstree4</a> 
+- <a href="https://github.com/husonlab/splitstree6"target="_blank">splitstree6</a> 
 
 
 <br/>
+
+
+
+
+
