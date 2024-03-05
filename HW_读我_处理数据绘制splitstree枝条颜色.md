@@ -4,8 +4,8 @@
 
 
 ## 步骤一
-1. 用 `splistree6` 打开 `.nex` 文件，另存为 `.stree6` 文件， 使用 `VScode` 等编辑器打开 `.tree6` 文件    
-    + *在进行后续操作之前，注意备份好 `.nex` 和 `.tree6` 文件*
+1. 用 `splistree6` 打开 `.nex` 文件，另存为 `.stree6` 文件， 使用 `VScode` 等编辑器打开 `.stree6` 文件    
+    + *在进行后续操作之前，注意备份好 `.nex` 和 `.stree6` 文件*
 2. 搜索 `Input Taxa`，将其下的`TAXLABELS`复制保存为 **TAXLABELS.txt** ，注意不要与 `Working Taxa` 中的内`TAXLABELS`相混。
 内容如：
 ```md
@@ -94,8 +94,8 @@
 ## 步骤二
 1. 在 `jupyter lab` 中依次运行 `HW_准备绘制枝条颜色数据.ipynb` 的单元格
 2. 得到输出文件 **df_color.txt** 和 **df_edgcolor.txt**
-3. 将 **df_color.txt** 中的内容复制，替换掉 `.tree6` 中 `Input Taxa` 下的 `DISPLAYLABELS` （注意不是 `TAXLABELS`）
-4. 将 **df_edgcolor.txt** 中的内容复制，替换掉 `.tree6` 中 `TITLE 'SplitsNetwork';` 下的 `Edits = `后的内容，注意最后有一个英文的逗号不要误删了
+3. 将 **df_color.txt** 中的内容复制，替换掉 `.stree6` 中 `Input Taxa` 下的 `DISPLAYLABELS` （注意不是 `TAXLABELS`）
+4. 将 **df_edgcolor.txt** 中的内容复制，替换掉 `.stree6` 中 `TITLE 'SplitsNetwork';` 下的 `Edits = `后的内容，注意最后有一个英文的逗号不要误删了
 
 ## 步骤三
 1. 保存 `.stree6` 文件，做好备份
